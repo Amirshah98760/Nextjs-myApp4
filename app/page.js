@@ -55,7 +55,8 @@ export default function Home() {
 
 
   </div>
-     <h1 className="text-3xl font-bold text-center mb-20">Welcome to My App</h1>
+     <h1 className="text-3xl font-bold text-center   font-roboto">Welcome to My App</h1>
+     <p className="text-center text-lg mb-20 font-roboto">This is a sample paragraph in the Roboto font.</p>
   </section>
   );
 }
