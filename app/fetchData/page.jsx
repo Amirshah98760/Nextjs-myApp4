@@ -12,7 +12,7 @@ const page = () => {
             try{
                 const response = await fetch(URL);
                 const data = await response.json();
-                console.log(data)
+                // console.log(data)
                 setPosts(data);
 
             }
@@ -24,7 +24,7 @@ const page = () => {
     })
   return (
     <div className='grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 p-10'>
-        {posts.map((post)=>{
+        {posts.slice(0, 12).map((post)=>{
             return(
                 <div key={post.id} className='border border-gray-300 p-4 rounded-lg mb-4'>
                     <h2 className='text-xl font-bold mb-2'>{post.title}</h2>
